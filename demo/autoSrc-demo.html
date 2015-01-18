@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>autoSrc demo</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <img class="autoSrc"
+         src="desktop.jpg"
+         data-src-original="desktop.jpg"
+         data-src-tablet="tablet.jpg"
+         data-src-mobile="mobile.jpg"
+         alt="Lake's House">
+    <small>Original photo by <a href="https://unsplash.com/Cyyrius">Aurélien bellanger at unsplash.com</a></small>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="../auto-src.jquery-0.1.js"></script>
+    <script>
+        $(function() {
+            $(window).autoSrc().resize(function() {
+                $(this).autoSrc();
+            });
+        });
+    </script>
+</body>
+</html>
