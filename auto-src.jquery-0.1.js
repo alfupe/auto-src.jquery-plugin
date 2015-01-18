@@ -25,6 +25,9 @@
 
             $(settings.selector).attr("src", originalSrc);
 
+            if (device == "desktop")
+                $(settings.selector).attr("src", $(settings.selector).data(settings.dataDesktop));
+
             if (device == "tablet")
                 $(settings.selector).attr("src", $(settings.selector).data(settings.dataTablet));
 
