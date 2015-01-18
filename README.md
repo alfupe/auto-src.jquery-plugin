@@ -14,7 +14,7 @@ Please look at the demo directory to see how it works, but in summary:
      data-src-mobile="mobile.jpg"
      alt="whatever">
 ```
-2 - Call the plugin once or everytime the window is resized:
+2 - Call the plugin once and/or everytime the window is resized:
 ```JavaScript
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="../auto-src.jquery-0.1.js"></script>
