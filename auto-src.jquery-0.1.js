@@ -25,6 +25,9 @@
 
             $(settings.selector).attr("src", originalSrc);
 
+            if (device == "tablet")
+                $(settings.selector).attr("src", $(settings.selector).data(settings.dataTablet));
+
             if (device == "mobile")
                 $(settings.selector).attr("src", $(settings.selector).data(settings.dataMobile));
         });
