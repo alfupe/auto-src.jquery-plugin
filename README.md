@@ -9,7 +9,7 @@ Please look at the demo directory to see how it works, but in summary:
 ```HTML
 <img src="mobile.jpg"
      data-src-original="desktop.jpg"
-     data-desktop="desktop.jpg"
+     data-src-desktop="desktop.jpg"
      data-src-tablet="tablet.jpg"
      data-src-mobile="mobile.jpg"
      alt="whatever">
